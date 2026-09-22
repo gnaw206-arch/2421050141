@@ -1,0 +1,71 @@
+.danh-sach-muc{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.muc{
+    padding: 15px;
+    border-radius: 25px;
+}
+.muc:hover{
+    background-color: gray;
+    text-decoration: none;
+}
+.lien-ket-muc{
+color: azure;
+text-decoration: none;
+}
+.logo{
+    width: 100px;
+}
+.banner{
+
+    width: 95%;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+.banner-anh{
+    width: 100%;
+height: auto;
+     border-radius: 20px;
+}
+.danh-sach-chu-de{
+    width:90%;
+    height:27vh;
+    margin: 10px auto;
+
+}
+.danh-sach-phim{
+    display:flex;
+    justify-content:space-between;
+}
+.phim{
+    width: 19%;
+    height:20vh;
+    
+    img{
+        width:100%;
+        border-radius: 20px;
+        height: 22vh;
+    }
+
+}
+.danh-sach-nhan-vat{
+    display:flex;
+}
+.nhan-vat{
+    width:25%;
+    height:20vh;
+    
+    img{
+        width:150px;
+        border-radius: 55%;
+        height: 150px;
+    }
+}
