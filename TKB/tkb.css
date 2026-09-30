@@ -1,0 +1,65 @@
+        .danh-sach-muc{
+            padding :0;
+            margin:0;
+            list-style: none;
+            display: flex;
+            /* gap khoảng cách csacs đối tượng bên trong */
+            gap: 20px;
+
+        }
+        .danh-muc{
+            background-color: #198cf0;
+            padding: 15px;
+            border-top-left-radius: 20px;
+        }
+        .lien-ket{
+            color: white;
+            /* bỏ đi gạch chân  */
+            text-decoration: none;
+        }
+        .TKB{
+            width: 98%;
+            height: auto;
+            margin:20px auto;
+            border: 1px solid #198cf0;
+            border-radius: 10px;
+        }
+        .chuc-nang{
+            width: 95%;
+            margin:10px auto;
+            display: flex;
+            justify-content:space-between;
+            border-bottom: 1px solid #198cf0;
+        }
+        .khung-1{
+            display: flex;
+        }
+        .ds-nam-hoc{
+            width: 24%;
+            height: auto;        
+            border: 1px solid gray;
+            border-radius: 5px;
+            margin: 5px 0px auto 20px;
+        }
+        .ds-tkb{
+            width: 34%;
+            height: auto;        
+            border: 1px solid gray;
+            border-radius: 5px;
+            margin: 5px 0px auto 5px;
+        }
+        .ds-tuan{
+            width: 58.5%;
+            height: auto;        
+            border: 1px solid gray;
+            border-radius: 5px;
+            margin: 5px 0px auto 20px;
+        }
+        .khung-3{
+            width: 96%;
+            height: auto;        
+            border: 1px solid #198cf0;
+            border-radius: 5px;
+            margin: 20px 0px 10px 25px;
+        }
+

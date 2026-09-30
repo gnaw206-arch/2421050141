@@ -1,0 +1,66 @@
+body{
+    background-color: black;
+}
+header{
+    align-items: center;
+
+}
+.main{
+    border-top:2px solid gray ;
+}
+.thanh-cong-cu{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+.danh-sach-muc{
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+}
+.muc:hover{
+background-color: gray;
+    padding:5px;
+    border-radius: 10px;
+}
+.lk-muc{
+    color: aliceblue;
+    text-decoration: none;
+    width: 5%;
+
+}
+.logo{
+    width: 100px;
+}
+.banner{
+    width: 48%;
+    margin: 20px auto;
+}
+.banner-img{
+    width: 100%;
+    height: auto;
+
+}
+.danh-sach-chu-de{
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+
+}
+.kenh{
+    width:19%;
+    height: auto;
+    border-radius: 20px;
+}
+.danh-sach-kenh{
+     display: flex;
+    justify-content: space-between;
+
+}
+.kenh-img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}

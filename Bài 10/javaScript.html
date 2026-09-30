@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Date
+    var homNay = new Date ();
+    document.writeln("<br>");
+    document.writeln(homNay);
+    
+    var ngay = new Date (30/09/2026);
+    document.writeln('<br>');
+    document.writeln(ngay);
+        //lấy ra ngày,tháng,năm
+    var namNay= homNay.getFullYear();
+    document.writeln("<br>");
+    document.writeln(namNay);
+    
+    var thangNay = homNay.getMonth()+1;
+    document.writeln("<br>");
+    document.writeln(thangNay);
+
+    var ngayHomNay=homNay.getDate();
+    document.writeln("<br>");
+    document.writeln(ngayHomNay);
+
+    var thu=homNay.getDay()+1;
+    document.writeln("<br>");
+    document.writeln(thu);
+    document.writeln("<br>");
+    document.writeln(" hom nay la thu" + thu + "ngay" + ngayHomNay +"Thang" + thangNay +"nam"+ namNay);
+
+    //Mảng
+    var mang=[1,2,3,4,5];
+    document.writeln("<br>");
+    document.writeln(mang[2]);
+    document.writeln("<br>");
+    document.writeln(mang.length);
+
+    var mangChu = ["Châu","Ly","Hồng","Bình"]
+    document.writeln("<br>");
+    document.writeln(mangChu[0]);
+
+    var mangTH=[1,2,3,4,5,"Quang","Anh","Bình"];
+    document.writeln("<br>"); 
+    document.writeln(mangTH[6]);
+
+    var a= mang.concat(mangChu, mangTH);
+    document.writeln("<br>");
+    document.writeln(a);
+    document.writeln("<br>");
+    document.writeln(a.join("-"));
+    document.writeln("<br>");
+    document.writeln(a.pop());//in ra phần tử cuối cùng trong mảng
+    document.writeln("<br>");
+    a.push("Hồng") 
+    document.writeln(a);
+    document.writeln(a.reverse());
+
+    //object
+    var thongTinSV1 = {
+        ten: "Lương Quang Anh",
+        namSinh: 2006,
+        queQuan:{
+            thanhPho: "Berlin",
+            phuong: "chu",
+        }
+    };
+    document.writeln("<br>");
+    document.writeln(thongTinSV1.queQuan.thanhPho);
+    tuoi=namNay-thongTinSV1.namSinh;
+    thongTinSV1.tuoi=tuoi;
+    // console.log(thongTinSV);
+//mảng có 2 sv
+  var thongTinSV2 = {
+        ten: "Lê Thị Minh Hồng",
+        namSinh: 2006,
+        queQuan:{
+            thanhPho: "Ninh Bình",
+            phuong: "Phu Ly",
+        }
+    };
+    var mangSV=[thongTinSV1,thongTinSV2];
+    document.writeln("<br>");
+console.log(mangSV);
+// so sánh bằng
+//=== so sánh cả giá trị và kiểu dữ liệu
+
+    var so1= 5;
+    var so2=10;
+    document.writeln("<br>");
+    document.writeln(so1==so2);
+//câu đkien
+document.writeln("<br>");
+if(thu>6){
+    document.writeln("nghỉ");
+}else{
+    document.writeln("đi học");
+}
+//baitap
+document.writeln("<br>");
+var so = 5;
+if(so%2==0){
+    document.writeln("số chẵn");
+}else{
+    document.writeln("số lẻ");
+}
+
+
+
+    </script>
+</body>
+</html>
