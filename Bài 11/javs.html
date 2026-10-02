@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var d = new Date();
+        var theDay= d.getDay();
+        switch (theDay){
+            case 5:
+                document.write(" Thứ 6 cuối cùng");
+                break;
+            case 6:
+                document.write(" ThSieeuu thứ 7");
+                break;
+            case 5:
+                document.write("Chủ nhật ngủ");
+                break;
+            default:
+                document.write("tôi tìm kiếm ngày cuối tuần")
+        }
+        for(var i=1;i<=1000;i++){
+            document.writeln("<br>");
+            document.writeln("Anh xin lỗi em lần thứ :" + i);
+        }
+        var mang=[1,2,3,4,5,"quang","anh","chau"];
+        for(i=0;i<mang.length;i++){
+            if(isNaN(mang[i])){
+                document.writeln("<br>");
+                document.writeln("xin chào"+mang[i]);
+            }
+        }
+        while(i<=10){
+            document.writeln("<br>");
+            document.writeln("the number is"+i);
+            i=i+1;
+        }
+        var j=0;
+        do{
+            document.writeln("<br>");
+            document.writeln("the number is"+j);
+            j=j+1;
+        }while(j<=10)
+        
+        
+  //prombt      
+        
+        // alert("nhớ em rồi")
+        // var r= confirm("em có nhớ anh không")
+        // if (r==true){
+        //     document.write("em nhớ anh nhiều lắm");
+        // }else{
+        //     document.writeln("nhớ cái deo j");
+        // }
+        // var r = prompt ("nhập địa chỉ đi ăn","em muốn ăn gì");
+        // document.writeln(r);
+        
+     // hàm function   
+        function say(){
+            document.writeln("<br>");
+            document.writeln("I Love You");
+        }
+        say();
+        
+        function ten(ten){
+            document.writeln(" "+ten);
+        }
+        // ten("Chau anh");
+
+
+// bài tập nhập 2 số bất kì tính tổng 
+        
+        function tong(a,b){
+            if(!isNaN(a)&&!isNaN(b))
+            document.writeln("kết quả:"+ (a+b));
+        }
+        var a = prompt ("nhập số a","...");
+        var b = prompt ("nhập số b","..."); 
+        tong(a,b);
+    </script>
+</body>
+</html>
