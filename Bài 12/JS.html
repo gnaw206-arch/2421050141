@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        Nhập điểm A: <input id="diemA" type="number">
+    </div>
+    <div>
+        Nhập điểm B: <input id="diemB" type="number">
+    </div>
+    <div>
+        Nhập điểm C: <input id="diemC" type="number">
+    </div>
+    <div>
+        <button onclick="tinhDiem()"> Tính Điểm</button>
+    </div>
+    <div>
+        kết quả: <input id="ketQua" type="text">
+    </div>
+    <div>
+        Nhập vào năm sinh: <input id="namSinh" type="number">
+    </div>
+    <div>
+        <button onclick="tinhTuoi()"> Tính Tuổi</button>
+    </div>
+    <div>
+        Tuổi: <input id="soTuoi" type="number">
+    </div>
+    <script>
+        function tinhTuoi(){
+            var a = parseInt(document.getElementById("namSinh").value);
+            var b = new Date().getFullYear();
+            var tuoi=b-a;
+             document.getElementById("soTuoi").value=tuoi;
+        }
+        function tinhDiem() {
+            var a = parseFloat(document.getElementById("diemA").value);
+            var b = parseFloat(document.getElementById("diemB").value);
+            var c = parseFloat(document.getElementById("diemC").value);
+            
+            document.getElementById("ketQua").value=tinhDiemChu(a,b,c);
+        }
+        function tinhDiemChu(a, b, c) {
+
+            var tong = a * 0.6 + b * 0.3 + c * 0.1;
+            if (tong >= 9) {
+                return "A+";
+            } else if (tong >= 8.5) {
+                return "A";
+            } else if (tong >= 8) {
+                return "B+";
+            } else if (tong >= 7) {
+                return "B";
+            } else if (tong >= 6.5) {
+                return "C+";
+            } else if (tong >= 5.5) {
+                return "C";
+            } else if (tong >= 5) {
+                return "D+";
+            } else if (tong >= 4) {
+                return "D";
+            } else {
+                return "F";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

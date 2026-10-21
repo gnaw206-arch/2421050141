@@ -80,6 +80,40 @@
         var a = prompt ("nhập số a","...");
         var b = prompt ("nhập số b","..."); 
         tong(a,b);
+
+
+function tinhDiemChu(A,B,C){
+    var tong = A*0.6 + B*0.3 + C*0.1;
+     if (tong >= 9) {
+        return "A+";
+    } else if (tong >= 8.5) {
+        return "A";
+    } else if (tong >= 8) {
+        return "B+";
+    } else if (tong >= 7) {
+        return "B";
+    } else if (tong >= 6.5) {
+        return "C+";
+    } else if (tong >= 5.5) {
+        return "C";
+    } else if (tong >= 5) {
+        return "D+";
+    } else if (tong >= 4) {
+        return "D";
+    } else {
+        return "F";
+    }    
+}    
+
+var A = Number(prompt("Nhập điểm A:"));
+var B = Number(prompt("Nhập điểm B:"));
+var C = Number(prompt("Nhập điểm C:"));
+
+ var tong = A*0.6 + B*0.3 + C*0.1;
+ var diemChu = tinhDiemChu(A, B, C);
+
+ document.write("Điểm tổng kết: " + tong + "<br>");
+document.write("Điểm chữ: " + diemChu);
     </script>
 </body>
 </html>
