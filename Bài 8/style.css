@@ -32,7 +32,7 @@ text-decoration: none;
 }
 .banner-anh{
     width: 100%;
-height: auto;
+    height: 100vh;
      border-radius: 20px;
 }
 .danh-sach-chu-de{

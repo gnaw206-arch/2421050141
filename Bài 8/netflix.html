@@ -30,8 +30,12 @@
 
     </header>
     <main>
-        <div class="banner">
+        <div onclick="xemFin()" class="banner">
             <img class="banner-anh" src="../ảnh/labrador.jpg" alt="">
+        </div>
+        <div style="display: none;" class="banner">
+            <iframe class="banner-anh" src="https://www.youtube.com/embed/Bohi_E7Rhss?si=QZ66_AVO3xUlAM9y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
         </div>
         <div class="danh-sach-chu-de">
                 <div class="chu-de">
@@ -197,5 +201,11 @@
             </div>   
         </div>
     </main>
+    <script>
+        function xemFin(){
+            document.getElementsByClassName("banner")[0].style="display: none";
+            document.getElementsByClassName("banner")[1].style="display: block";
+        }
+    </script>
 </body>
 </html>
