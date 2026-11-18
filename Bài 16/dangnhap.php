@@ -75,10 +75,16 @@
         </form>
     </div>
     <?php
+    include 'connect.php'
+    session_start();
     if(isset($_POST['tenDangNhap']) && isset($_POST['matKhau']) ) {
     $tenDangNhap = $_POST['tenDangNhap'];
     $matKhau = $_POST['matKhau'];
-    if($tenDangNhap == "admin" && $matKhau == "123"){
+   $sql = *SELECT* form nguoi_dung where ten_dang_nhap = $tenDangNhap and mat_khau= $matKhau;
+   $result= mysql_query($conn,$sql)
+   
+    if(mysql_num_rows($result) > 0){
+        $_SESSION['dangnhap']="thanhcong"
         header("Location: trangchu.php");
     }
     else{
